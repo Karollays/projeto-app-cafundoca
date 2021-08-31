@@ -1,5 +1,6 @@
 body{
     background-image: url("https://img.elo7.com.br/product/original/2E97A7E/logotipo-personalizada-restaurante-logotipo-restaurante.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .container{  
