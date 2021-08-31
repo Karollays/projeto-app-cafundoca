@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Menu from './components/Menu/Menu.jsx';
 import React from 'react';
 import './App.css';
+import './reset.css'; 
 
 import Teste from './components/Teste/Teste';
 import Home from './components/Home/Home'

@@ -7,10 +7,11 @@
   background: #603079;
   padding: 8px 10px;
   border: none;
-
+  cursor:pointer;
 }
 .btn:hover, .btn:focus, .active {
   background: #440B5A;
+
 }
 
 .btn:disabled {

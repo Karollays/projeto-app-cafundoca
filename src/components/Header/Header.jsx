@@ -1,10 +1,12 @@
 import React from 'react';
 import "./Header.css";
+import Logo from "./../Logo/Logo.jsx"
 
 function Header() {
 
     return (
-        <div className="header"><h1><center>Header</center></h1></div>
+        <div className="header"><Logo width="150px" /></div>
+
     );
 
 }
