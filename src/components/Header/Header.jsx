@@ -1,12 +1,13 @@
 import React from 'react';
+import "./Header.css";
+import Menu from "../Menu/Menu";
 
+function Header() {
 
-class Header extends React.Component{
-    render(){
-        return (
-            <h1 className="navbar">Cabeçalho</h1>
-        ); 
-    }
+    return (
+        <Menu />
+    );
+
 }
 
 export default Header;
