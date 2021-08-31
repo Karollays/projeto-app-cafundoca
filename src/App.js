@@ -7,7 +7,12 @@ import './App.css';
 import './reset.css'; 
 
 import Teste from './components/Teste/Teste';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import Compras from './components/Compras/Compras';
+import Clientes from './components/Clientes/Clientes';
+import Produtos from './components/Produtos/Produtos';
+import Fornecedores from './components/Fornecedores/Fornecedores';
+import Pedidos from './components/Pedidos/Pedidos';
 function App() {
   return (
     <div className="container">
@@ -17,6 +22,11 @@ function App() {
         <div className="article">
         <Route component={Home} path="/" exact/>
         <Route component={Teste} path="/teste" />
+        <Route component={Compras} path="/compras" />
+        <Route component={Clientes} path="/clientes" />
+        <Route component={Produtos} path="/produtos" />
+        <Route component={Fornecedores} path="/fornecedores" />
+        <Route component={Pedidos} path="/Pedidos" />
         <Footer />
         </div>
       </BrowserRouter>
