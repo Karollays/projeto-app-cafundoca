@@ -1,5 +1,6 @@
 import React from 'react'; 
 import Button from '../Button/Button';
+import './Menu.css'
 
 function Menu() {
      return (
