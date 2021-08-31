@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import style from './Button.module.css'
+import React, { useState } from 'react';
+import style from './Button.module.css';
 
 function Button(props) {
     const { texto } = props
@@ -11,16 +11,16 @@ function Button(props) {
         
         setTimeout(() => {
             setButtonDisabled({ disabled: false })
-        }, 3000)
+        }, 30)
     }
 
     return (
-        <button disabled={isButtonDisabled.disabled}
+        <li><button disabled={isButtonDisabled.disabled}
             className={style.btn}
             onClick={meuClique}>
                 {texto}
-                Enviar 
-        </button>
+               
+        </button></li>
     )
 }
 
