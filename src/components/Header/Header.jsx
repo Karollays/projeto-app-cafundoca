@@ -1,10 +1,21 @@
 import React from 'react';
+import "./Header.css";
 
 
 class Header extends React.Component{
     render(){
         return (
-            <h1 className="navbar">Cabeçalho</h1>
+            <Menu>
+                <nav>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                </nav>
+            </Menu>
         ); 
     }
 }
