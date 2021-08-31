@@ -1,9 +1,31 @@
+.body-edit{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+.body-edit::after{
+    content: "";
+    background: url('./rest/restauranteLogo.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container{  
     display: grid;
     width: 100%;
     text-align: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    opacity: none;
 }
+
 .article{
     width: 915px;
     height: auto;

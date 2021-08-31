@@ -9,8 +9,8 @@ import Teste from './components/Teste/Teste';
 import Home from './components/Home/Home'
 function App() {
   return (
-    <div className="container">
-      <BrowserRouter>
+    <div className="body-edit ">
+      <BrowserRouter className="container">
         <Header />
         <Menu />
         <div className="article">
