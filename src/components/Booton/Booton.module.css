@@ -1,0 +1,18 @@
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #E18F0D;
+  background: #603079;
+  width: 100px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover, .btn:focus, .active {
+  background: #440B5A;
+}
+
+.btn:disabled {
+  background-color: #2a0d5a;
+}
