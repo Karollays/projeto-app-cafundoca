@@ -11,7 +11,7 @@ function Button(props) {
         
         setTimeout(() => {
             setButtonDisabled({ disabled: false })
-        }, 3000)
+        }, 30)
     }
 
     return (
