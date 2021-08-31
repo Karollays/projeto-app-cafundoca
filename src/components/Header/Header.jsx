@@ -1,23 +1,13 @@
 import React from 'react';
 import "./Header.css";
+import Menu from "../Menu/Menu";
 
+function Header() {
 
-class Header extends React.Component{
-    render(){
-        return (
-            <Menu>
-                <nav>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                </nav>
-            </Menu>
-        ); 
-    }
+    return (
+        <Menu />
+    );
+
 }
 
 export default Header;
