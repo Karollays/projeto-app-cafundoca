@@ -4,12 +4,18 @@
   text-align: center;
   margin-top: 5rem;
   margin-bottom: auto;
+
 }
 .login-form{
   display: grid;
   margin-top: auto;
   margin-bottom: auto;
   grid-template-columns: 1fr 1fr;
+  background-color: rgb(167, 200, 243);
+  color: white;
+  padding: 10rem;
+  border-radius: 5%;
+  box-shadow: rgba(80, 80, 80, 0.26) 0px 0px 10px;
 }
 .login-form-input{
   margin: 5rem;
@@ -19,13 +25,14 @@
 }
 .login-form-title{
   font-family: Poppins-Bold;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 2rem;
   color: #333;
-  line-height: 1.2;
   text-align: center;
   display: block;
   padding-bottom: 54px;
 }
 .login-form-button{
-  margin-top: 0.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
