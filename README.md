@@ -91,11 +91,9 @@ References:
 Inclua um resumo da mudança e qual problema foi corrigido. Inclua também a motivação e o contexto relevantes. Liste todas as dependências necessárias para esta mudança.
  
 Correções # (problema)
+## Tipo de mudança
 
 ```md
-
- ## Tipo de mudança
- 
 Exclua as opções que não são relevantes.
  
 - [ ] Correção de bug (alteração ininterrupta que corrige um problema)
