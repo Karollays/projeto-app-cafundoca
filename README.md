@@ -10,7 +10,7 @@
 #### - [Padrão de Pull Request](#Padrão-de-Pull-Request)
 # Restaurante-react RESILIA MODULO 5
 
-Esta aplicação irá administrar um sistema de restaurante com toda parte front-end produzida com React. Assim sendo, é possível cadastrar clientes, produtos,funcionários, fornecedores, fazer pedidos e até mesmo, fazer uma lista de compras.
+Esta aplicação irá administrar um sistema de restaurante localizado em Itajaí-SC, elaborado toda parte front-end produzida com ReactJs. Assim sendo, é possível logar, cadastrar clientes, produtos,funcionários, fornecedores, fazer pedidos e até mesmo, fazer uma lista de compras.
 
 # Tecnologias
 
@@ -22,6 +22,10 @@ criando toda parte front-end com a biblioteca React.
 - [ReactJs](https://pt.wikipedia.org/wiki/React_(JavaScript))
 
 O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.
+
+- [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+Toda estilização do projeto foi feito com o mecanismo CSS. Este tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes propriedade de estilo de uma página.
 
 - [Netlify](https://en.wikipedia.org/wiki/Netlify)
 
