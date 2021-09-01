@@ -1,5 +1,5 @@
 import React from 'react';
-import "./../AnimacaoLogo/AnimacaoLogo.css";
+import "./AnimacaoLogo.css";
 import  SimboloCa from "./../../rest/ca.png";
 import  SimboloCafundoca from "./../../rest/cafundoca.png";
 
