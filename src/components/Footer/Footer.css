@@ -5,4 +5,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  bottom:0;
+  position: sticky;
 }
