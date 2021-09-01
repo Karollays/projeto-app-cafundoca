@@ -1,6 +1,6 @@
-<h1 align="center">Restaurante Cafundóca com React 🍽️</h1>
+# Restaurante Cafundóca com React 🍽️
 
-# Indice
+# Índice
 #### - [Descrição](#restaurante-react-resilia-modulo-5)
 #### - [Tecnologias](#tecnologias)
 #### - [Iniciando Projeto](#iniciando-projeto)
