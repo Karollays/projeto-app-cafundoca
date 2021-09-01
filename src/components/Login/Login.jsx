@@ -11,10 +11,10 @@ const Login = () => {
           <img src="https://www.w3schools.com/howto/img_avatar.png" style={{ borderRadius: '50%'}} alt="avatar" />
         </div>
         <div className="login-form-input">
-          <span className="login-form-title">Login</span>
+          <span className="login-form-title">Faça Login.</span>
           <InputField text="Email" width="100%" height="50px" placeholder="Email"/>
           <InputField text="Password"  width="100%" height="50px" placeholder="Password"/>
-          <Link to="/home" className="btn"><Button className="login-form-button" texto="Login"></Button></Link>
+          <Link to="/home" className="login-form-button" ><Button  texto="Login"></Button></Link>
           <a href={'localhost:3000'}>Forgot password? </a>
           <a href={'localhost:3000'}>Register</a>
         </div>
