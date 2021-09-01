@@ -1,8 +1,12 @@
 import React, {} from 'react';
+import './Logo.css'
+import logoCafundoca from './../../rest/logo-cafundoca.png'
 const Logo = (props) => {
   const width = props.width || '100%';
   return ( 
-    <img width={width} src="https://trello.com/1/cards/612e9610dd48577f4fc985bd/attachments/612e9626ca9cdf24e9185a69/download/Prancheta_19%4072x-8.png" alt="Logo Restaurante" />
+    <div className="logo-cafundoca">
+      <img width={width} src={logoCafundoca} alt="Logo Restaurante" />
+    </div>
    );
 }
  
