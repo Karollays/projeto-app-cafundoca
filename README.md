@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<h1 align="center">Restaurante Cafundóca com React App</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Indice
+#### - [Descrição](#restaurante-react-resilia-modulo-5)
+#### - [Tecnologias](#tecnologias)
+#### - [Iniciando Projeto](#iniciando-projeto)
+#### - [React Router Dom](#React-Router-Dom)
+# Referências
+#### - [Semantic-coomit](#Semantic-coomit)
+#### - [Padrão de Pull Request](#Padrão-de-Pull-Request)
+# Restaurante-react RESILIA MODULO 5
 
-## Available Scripts
+Esta aplicação irá administrar um sistema de restaurante com toda parte front-end produzida com React. Assim sendo, é possível cadastrar clientes, produtos,funcionários, fornecedores, fazer pedidos e até mesmo, fazer uma lista de compras.
 
-In the project directory, you can run:
+# Tecnologias
 
-### `npm start`
+Neste projeto utilizamos tudo o que aprendemos nas aulas do 4 modulo,
+que é voltado para desenvolvimento back-end, sendo elaborada uma 
+API-Rest utilizando Node.js. Posteriormente, no módulo 5, consumimos a api 
+criando toda parte front-end com a biblioteca React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ReactJs](https://pt.wikipedia.org/wiki/React_(JavaScript))
+```
+O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.
+```
+- [Netlify](https://en.wikipedia.org/wiki/Netlify)
+```
+A Netlify é uma empresa de computação em nuvem com sede em San Francisco que oferece hospedagem e serviços de back-end sem servidor para aplicativos da web e sites estáticos .
+```
+# Iniciando projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Neste projeto utilizamos o Netlify para hospedar nosso projeto React. Porém, para iniciar remotamente
+após o clone dos arquivos, abra o terminal de seu editor ou em sua máquina e utilize os seguintes
+comandos.
 
-### `npm test`
+Passo 1 - Instalando as dependências do Node_Modules
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
+Passo 2 - Iniciando projeto
 
-### `npm run build`
+```bash
+npm start 
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# React-Router-Dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Foi utilizado também o pacote react-dom que provê métodos específicos para o DOM que podem ser usados no nível superior de sua aplicação como uma válvula de escape para sair do modelo do React. A maioria de seus componentes não devem precisar deste módulo.
+# Semantic-coomit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See how a minor change to your commit message style can make you a better programmer.
 
-### `npm run eject`
+Format: `<type>(<scope>): <subject>`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`<scope>` is optional
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Example
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Summary in present tense.
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+More Examples:
 
-## Learn More
+- `feat`: (new feature for the user, not a new feature for build script)
+- `fix`: (bug fix for the user, not a fix to a build script)
+- `docs`: (changes to the documentation)
+- `style`: (formatting, missing semi colons, etc; no production code change)
+- `refactor`: (refactoring production code, eg. renaming a variable)
+- `test`: (adding missing tests, refactoring tests; no production code change)
+- `chore`: (updating grunt tasks etc; no production code change)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+References:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- https://www.conventionalcommits.org/
+- https://seesparkbox.com/foundry/semantic_commit_messages
+- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
 
-### Code Splitting
+# Padrão de Pull Request
+# Descrição
+ 
+Inclua um resumo da mudança e qual problema foi corrigido. Inclua também a motivação e o contexto relevantes. Liste todas as dependências necessárias para esta mudança.
+ 
+Correções # (problema)
+ ## Tipo de mudança
+ 
+Exclua as opções que não são relevantes.
+ 
+- [] Correção de bug (alteração ininterrupta que corrige um problema)
+- [] Novo recurso (mudança ininterrupta que adiciona funcionalidade)
+- [] Mudança violenta (correção ou recurso que faria com que a funcionalidade existente não funcionasse como esperado)
+- [] Esta mudança requer uma atualização de documentação
+ # Lista de controle:
+ 
+- [] Meu código segue as diretrizes de estilo deste projeto
+- [] Eu fiz uma autoavaliação do meu próprio código
+- [] Comentei meu código, especialmente em áreas de difícil compreensão
+- [] Fiz as alterações correspondentes na documentação
+- [] Minhas alterações não geram novos avisos
+- [] Eu adicionei testes que provam que minha correção é eficaz ou que meu recurso funciona
+- [] Testes de unidade novos e existentes são aprovados localmente com minhas alterações
+- [] Quaisquer alterações dependentes foram mescladas e publicadas nos módulos downstream
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
