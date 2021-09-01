@@ -1,7 +1,7 @@
 import Logo from './../Logo/Logo'
 const Home = () => {
   return ( 
-    <Logo width='100%'/>
+    <Logo width='70%'/>
    );
 }
  

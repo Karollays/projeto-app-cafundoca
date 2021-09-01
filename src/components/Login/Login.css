@@ -1,0 +1,31 @@
+.container-login{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: auto;
+}
+.login-form{
+  display: grid;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.login-form-input{
+  margin: 5rem;
+  display: grid;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.login-form-title{
+  font-family: Poppins-Bold;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  padding-bottom: 54px;
+}
+.login-form-button{
+  margin-top: 0.6rem;
+}
