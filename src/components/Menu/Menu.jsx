@@ -8,22 +8,34 @@ function Menu() {
     <div className="menu">
       <ul>
         <Link to="/home" className="btn">
-        <li><Button texto="Home"></Button></li>
+          <li>
+            <Button texto="Home"></Button>
+          </li>
         </Link>
-        <Link to="/Compras" className="btn">
-        <li><Button texto="Compras"></Button></li>
+        <Link to="/compras" className="btn">
+          <li>
+            <Button texto="Compras"></Button>
+          </li>
         </Link>
-        <Link to="/Clientes" className="btn">
-          <li><Button texto="Clientes"></Button></li>
+        <Link to="/clientes" className="btn">
+          <li>
+            <Button texto="Clientes"></Button>
+          </li>
         </Link>
-        <Link to="/Produtos" className="btn">
-        <li><Button texto="Produtos"></Button></li>
+        <Link to="/produtos" className="btn">
+          <li>
+            <Button texto="Produtos"></Button>
+          </li>
         </Link>
-        <Link to="/Fornecedores" className="btn">
-        <li><Button texto="Fornecedores"></Button></li>
+        <Link to="/fornecedores" className="btn">
+          <li>
+            <Button texto="Fornecedores"></Button>
+          </li>
         </Link>
-        <Link to="/Pedidos" className="btn">
-        <li><Button texto="Pedidos"></Button></li>
+        <Link to="/pedidos" className="btn">
+          <li>
+            <Button texto="Pedidos"></Button>
+          </li>
         </Link>
       </ul>
     </div>

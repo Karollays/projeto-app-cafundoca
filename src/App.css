@@ -8,7 +8,7 @@ input {
     outline: none;
     border: none;
 }
-.container{  
+.appContainer{  
     width: 100%;
     text-align: center;
     justify-content: center;
