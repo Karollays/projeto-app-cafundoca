@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Header.css";
-import Menu from "../Menu/Menu";
+import Logo from "./../Logo/Logo.jsx"
 
 function Header() {
 
     return (
-        <Menu />
+        <div className="header"><Logo width="150px" /></div>
+
     );
 
 }

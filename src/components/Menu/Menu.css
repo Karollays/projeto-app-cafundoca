@@ -1,0 +1,11 @@
+.menu ul{
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+.btn{
+   width: 100%;
+   text-decoration: none;
+}

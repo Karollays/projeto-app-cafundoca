@@ -1,11 +1,9 @@
 import React from 'react';
-
+import Login from './../Login/Login'
 function Article(){
-  
         return(
             <div>
-            <h3>Título do artigo</h3>
-            <p>Conteúdo do artigo</p>
+                <Login />
             </div>
         );
 
