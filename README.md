@@ -1,4 +1,4 @@
-<h1 align="center">Restaurante Cafundóca com React App</h1>
+<h1 align="center">Restaurante Cafundóca com React 🍽️</h1>
 
 # Indice
 #### - [Descrição](#restaurante-react-resilia-modulo-5)
@@ -20,13 +20,13 @@ API-Rest utilizando Node.js. Posteriormente, no módulo 5, consumimos a api
 criando toda parte front-end com a biblioteca React.
 
 - [ReactJs](https://pt.wikipedia.org/wiki/React_(JavaScript))
-```
+
 O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.
-```
+
 - [Netlify](https://en.wikipedia.org/wiki/Netlify)
-```
+
 A Netlify é uma empresa de computação em nuvem com sede em San Francisco que oferece hospedagem e serviços de back-end sem servidor para aplicativos da web e sites estáticos .
-```
+
 # Iniciando projeto
 
 Neste projeto utilizamos o Netlify para hospedar nosso projeto React. Porém, para iniciar remotamente
@@ -83,7 +83,6 @@ References:
 - http://karma-runner.github.io/1.0/dev/git-commit-msg.html
 
 # Padrão de Pull Request
-# Descrição
  
 Inclua um resumo da mudança e qual problema foi corrigido. Inclua também a motivação e o contexto relevantes. Liste todas as dependências necessárias para esta mudança.
  
@@ -92,19 +91,19 @@ Correções # (problema)
  
 Exclua as opções que não são relevantes.
  
-- [] Correção de bug (alteração ininterrupta que corrige um problema)
-- [] Novo recurso (mudança ininterrupta que adiciona funcionalidade)
-- [] Mudança violenta (correção ou recurso que faria com que a funcionalidade existente não funcionasse como esperado)
-- [] Esta mudança requer uma atualização de documentação
+- [ ] Correção de bug (alteração ininterrupta que corrige um problema)
+- [ ] Novo recurso (mudança ininterrupta que adiciona funcionalidade)
+- [ ] Mudança violenta (correção ou recurso que faria com que a funcionalidade existente não funcionasse como esperado)
+- [ ] Esta mudança requer uma atualização de documentação
  # Lista de controle:
  
-- [] Meu código segue as diretrizes de estilo deste projeto
-- [] Eu fiz uma autoavaliação do meu próprio código
-- [] Comentei meu código, especialmente em áreas de difícil compreensão
-- [] Fiz as alterações correspondentes na documentação
-- [] Minhas alterações não geram novos avisos
-- [] Eu adicionei testes que provam que minha correção é eficaz ou que meu recurso funciona
-- [] Testes de unidade novos e existentes são aprovados localmente com minhas alterações
-- [] Quaisquer alterações dependentes foram mescladas e publicadas nos módulos downstream
+- [ ] Meu código segue as diretrizes de estilo deste projeto
+- [ ] Eu fiz uma autoavaliação do meu próprio código
+- [ ] Comentei meu código, especialmente em áreas de difícil compreensão
+- [ ] Fiz as alterações correspondentes na documentação
+- [ ] Minhas alterações não geram novos avisos
+- [ ] Eu adicionei testes que provam que minha correção é eficaz ou que meu recurso funciona
+- [ ] Testes de unidade novos e existentes são aprovados localmente com minhas alterações
+- [ ] Quaisquer alterações dependentes foram mescladas e publicadas nos módulos downstream
 
 
