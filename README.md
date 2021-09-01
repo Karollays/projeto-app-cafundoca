@@ -91,6 +91,9 @@ References:
 Inclua um resumo da mudança e qual problema foi corrigido. Inclua também a motivação e o contexto relevantes. Liste todas as dependências necessárias para esta mudança.
  
 Correções # (problema)
+
+```md
+
  ## Tipo de mudança
  
 Exclua as opções que não são relevantes.
@@ -109,5 +112,5 @@ Exclua as opções que não são relevantes.
 - [ ] Eu adicionei testes que provam que minha correção é eficaz ou que meu recurso funciona
 - [ ] Testes de unidade novos e existentes são aprovados localmente com minhas alterações
 - [ ] Quaisquer alterações dependentes foram mescladas e publicadas nos módulos downstream
-
+```
 
