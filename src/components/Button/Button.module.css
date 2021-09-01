@@ -1,11 +1,8 @@
 .btn {
-  display:grid;
-  width: 100%;
   font-size: 18px;
   font-weight: 700;
   color: #E18F0D;
   background: #603079;
-  padding: 8px 10px;
   border: none;
   cursor:pointer;
 }

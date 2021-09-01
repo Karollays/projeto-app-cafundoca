@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './Button.module.css';
 
 function Button(props) {
-    const { texto } = props
+    const { texto, width, height } = props
     
     const [isButtonDisabled, setButtonDisabled] = useState({ disabled: false })
 
@@ -16,6 +16,7 @@ function Button(props) {
 
     return (
         <button disabled={isButtonDisabled.disabled}
+        style={{ width: width || '100%' , height:height||'2.5rem'}}
             className={style.btn}
             onClick={meuClique}>
                 {texto}
