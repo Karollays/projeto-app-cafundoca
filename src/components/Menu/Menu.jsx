@@ -7,11 +7,8 @@ function Menu() {
   return (
     <div className="menu">
       <ul>
-        <Link to="/" className="btn">
+        <Link to="/home" className="btn">
         <li><Button texto="Home"></Button></li>
-        </Link>
-        <Link to="/login" className="btn">
-        <li><Button texto="Teste"></Button></li>
         </Link>
         <Link to="/Compras" className="btn">
         <li><Button texto="Compras"></Button></li>
