@@ -15,12 +15,12 @@ function Button(props) {
     }
 
     return (
-        <li><button disabled={isButtonDisabled.disabled}
+        <button disabled={isButtonDisabled.disabled}
             className={style.btn}
             onClick={meuClique}>
                 {texto}
                
-        </button></li>
+        </button>
     )
 }
 
