@@ -4,11 +4,13 @@ import './ImagemEquipe.css';
 // import { FaGithub } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
 export default function ImagemEquipe(props) {
-  const { name, imgFirst, imgMeme } = props;
+  const { name, imgFirst, imgMeme, imgLink,imgGit } = props;
   return (
     <div className="imageEquipeContainer">
       <img className="imgFirst" src={imgFirst} alt="" />
       <img className="imgMeme" src={imgMeme} alt="" />
+      <img className="imgLink" src={imgLink} alt="" />
+      <img className="imgGit" src={imgGit} alt="" />
       <h3 style={{ color: '#3b1151' }}>{name}</h3>
       {/* <span className="redes">
         <Link to="google.com.br">
