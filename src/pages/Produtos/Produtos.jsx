@@ -58,7 +58,7 @@ export default function Produtos() {
     api
       .delete(`/produtos/` + id)
       .then((response) => {
-        console.log(response);
+        getProdutos();
       })
       .catch((err) => {
         console.error('ops! ocorreu um erro' + err);
@@ -69,7 +69,18 @@ export default function Produtos() {
 
   const postProduct = (data) => {
     data.preventDefault();
-    console.log(current);
+    api
+      .post('/produtos', { data })
+      .then((response) => {
+        setLista(
+          response.data.data.map((el) => {
+            return { key: el.id, id: el.id, ...el };
+          })
+        );
+      })
+      .catch((err) => {
+        console.error('ops! ocorreu um erro' + err);
+      });
   };
   const handleSubmit = (event) => {
     event.preventDefault();
