@@ -1,4 +1,35 @@
-.produtos { 
-    width: 100%;
-    height: 750px;
+.productContent{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+}
+.productColumnLeftTitle{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.productButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.3rem;
+}
+.productPath{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.productColumnLeft{
+    width: 15rem;
+}
+.productForm{
+    line-height: 1.5;
+}
+.productBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.productForm{
+    text-align: left;
+}
+.productContentTitle h1{
+    font-size: 4rem;
 }
