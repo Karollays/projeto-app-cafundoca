@@ -1,16 +1,16 @@
 import React from 'react';
 import './Footer.css';
-import { GrLinkedin } from 'react-icons/gr';
+import { FaWhatsapp } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
-import { FaFacebookSquare } from 'react-icons/fa';
+import { FiFacebook } from 'react-icons/fi';
 
 function Footer() {
   return (
     <div className="footer">
-      <h4>&copy; Since 2018</h4>
-      <GrLinkedin size={35} style={{ margin: 8 }} />
-      <FiInstagram size={35} style={{ margin: 8 }} />
-      <FaFacebookSquare size={35} style={{ margin: 8 }} />
+      <>&copy; Since 2021 </>
+      <FaWhatsapp size={35} style={{ margin: 8 }} color= "#f39200" />
+      <FiInstagram size={35} style={{ margin: 8 }} color= "#f39200" />
+      <FiFacebook size={35} style={{ margin: 8 }} color= "#f39200" />
     </div>
   );
 }
