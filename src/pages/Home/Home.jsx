@@ -1,14 +1,16 @@
 import React from 'react';
 import Container from '../../components/Container/Container';
-import Logo from './../../components/Logo/Logo';
 import Header from './../../components/Header/Header.jsx';
 import Footer from './../../components/Footer/Footer';
+import AnimacaoLogo from './../../components/AnimacaoLogo/AnimacaoLogo';
+import './Home.css';
+
 const Home = () => {
   return (
     <div className="home">
       <Header />
       <Container>
-        <Logo width="70%" />
+        <AnimacaoLogo/>
       </Container>
       <Footer />
     </div>
