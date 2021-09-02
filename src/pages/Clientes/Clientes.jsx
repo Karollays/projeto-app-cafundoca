@@ -13,12 +13,16 @@ export default function Clientes() {
     {
       id: '',
       nome: '',
-      preco: 0,
-      porcentagemDeLucro: 0,
-      quantidadeEstoque: 0,
-      quantidadeVendidos: 0,
-      descricao: '',
-      image: '',
+      telefone: '',
+      email: '',
+     dataNascimento: 0,
+      rua: "",
+      numero: '',
+      bairro: '',
+      cidade: '',
+      uf: '',
+      cep:'',
+      image:''
     },
   ];
   const [lista, setLista] = useState(defaultList);
@@ -117,35 +121,59 @@ export default function Clientes() {
                   width="20rem"
                   placeholder={current.nome}
                 />
-                Descrição:
+                Telefone:
                 <InputField
                   width="20rem"
-                  name="descricao"
-                  placeholder={current.descricao}
+                  name="telefone"
+                  placeholder={current.telefone}
                 />
-                Preço:
+                E-mail:
                 <InputField
                   width="20rem"
-                  name="preco"
-                  placeholder={current.preco}
+                  name="email"
+                  placeholder={current.email}
                 />
-                Quantidade em Estoque:
+                Data de Nascimento:
                 <InputField
-                  name="quantidadeEstoque"
+                  name="dataNascimento"
                   width="20rem"
-                  placeholder={current.quantidadeEstoque}
+                  placeholder={current.dataNascimento}
                 />
-                Quantidade vendidos:
+                Rua:
                 <InputField
-                  name="quantidadeVendidos"
+                  name="rua"
                   width="20rem"
-                  placeholder={current.quantidadeVendidos}
+                  placeholder={current.rua}
                 />
-                Porcentagem de lucro:
+                Número:
                 <InputField
-                  name="porcentagemDeLucro"
+                  name="numero"
                   width="20rem"
-                  placeholder={current.quantidadeVendidos}
+                  placeholder={current.numero}
+                />
+                 Bairro:
+                <InputField
+                  name="bairro"
+                  width="20rem"
+                  placeholder={current.bairro}
+                />
+                 Cidade:
+                <InputField
+                  name="cidade"
+                  width="20rem"
+                  placeholder={current.cidade}
+                />
+                UF:
+                <InputField
+                  name="uf"
+                  width="20rem"
+                  placeholder={current.uf}
+                />
+                CEP:
+                <InputField
+                  name="cep"
+                  width="20rem"
+                  placeholder={current.cep}
                 />
                 <div className="clienteButton">
                   <Item id="salvarCliente" type="submit" texto="Salvar" />
