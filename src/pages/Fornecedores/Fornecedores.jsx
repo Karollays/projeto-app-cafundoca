@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from './../../components/Header/Header';
-import AnimacaoLogo from './../../components/AnimacaoLogo/AnimacaoLogo';
+
 import './Fornecedores.css';
 import Footer from './../../components/Footer/Footer';
 import Container from '../../components/Container/Container';
+import EmContrucao from '../../components/AnimacaoConstrucao/EmConstrucao';
 export default function Fornecedores() {
   return (
     <div className="fornecedores">
       <Header />
       <Container>
-        <AnimacaoLogo />
+        <EmContrucao />
       </Container>
       <Footer />
     </div>

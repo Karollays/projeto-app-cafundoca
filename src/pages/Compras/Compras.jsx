@@ -2,6 +2,7 @@ import React from 'react';
 import Container from './../../components/Container/Container';
 import Footer from './../../components/Footer/Footer';
 import Header from './../../components/Header/Header';
+import EmConstrucao from './../../components/AnimacaoConstrucao/EmConstrucao';
 import './Compras.css';
 import InputField from './../../components/Input/InputField';
 const compras = [
@@ -43,6 +44,7 @@ export default function Compras() {
     <div className="comprasContainer">
       <Header />
       <Container>
+
         <div className="comprasContent">
           <div className="comprasContentTitle">
             <h1>Compras</h1>
@@ -84,6 +86,7 @@ export default function Compras() {
                      
                     </div>
       </Container>
+
       <Footer />
     </div>
   );

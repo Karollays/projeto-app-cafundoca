@@ -1,0 +1,33 @@
+.divsimbolo2{
+    margin-top: 6%;
+    width: 100%;
+    align-items: center;
+}
+.construcao{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: ;
+}
+.cafundocaConstrucao{
+    width: 20%;
+    align-items: center;
+    position: absolute;
+
+  }
+
+.emConstrucao{
+    animation: anim 3s infinite;
+    width: 20%;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes anim{
+    0%{
+        transform: translatey(0%);
+    }
+    100%{
+        transform: translatey(-20%);
+        display: none;
+    }
+}
+  
