@@ -37,6 +37,11 @@ function Menu() {
             <Button texto="Pedidos"></Button>
           </li>
         </Link>
+        <Link to="/equipe" className="btn">
+          <li>
+            <Button texto="Equipe"></Button>
+          </li>
+        </Link>
       </ul>
     </div>
   );

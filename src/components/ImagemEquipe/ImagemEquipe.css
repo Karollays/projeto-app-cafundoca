@@ -1,0 +1,21 @@
+.imageEquipeContainer{
+  width: 200px;
+  height: 200px;
+}
+.imgFirst {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+.imgMeme{
+  transform: translateX(-100%);
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+}
+.imgMeme:hover{
+   opacity: 1;
+}
+.imgFirst:hover{
+   opacity: 0;
+}

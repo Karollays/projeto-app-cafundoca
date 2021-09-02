@@ -8,6 +8,7 @@ import Produtos from './../../pages/Produtos/Produtos';
 import Fornecedores from './../../pages/Fornecedores/Fornecedores';
 import Pedidos from './../../pages/Pedidos/Pedidos';
 import Login from './../../pages/Login/Login';
+import Equipe from './../../pages/Equipe/Equipe';
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
         <Route component={Produtos} path="/produtos" />
         <Route component={Fornecedores} path="/fornecedores" />
         <Route component={Pedidos} path="/pedidos" />
+        <Route component={Equipe} path="/equipe" />
       </Switch>
     </BrowserRouter>
   );
