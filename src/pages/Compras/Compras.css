@@ -1,4 +1,36 @@
-.compras {
-    width: 100%;
-    height: 750px;
+.compraContent{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+.compraColumnLeftTitle{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.compraButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.3rem;
+}
+.compratPath{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.compraColumnLeft{
+    width: 15rem;
+}
+.compraForm{
+    line-height: 1.5;
+}
+.compraBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.compraForm{
+    text-align: left;
+}
+.compraContentTitle h1{
+    font-size: 4rem;
 }

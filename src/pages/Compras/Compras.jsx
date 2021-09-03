@@ -1,91 +1,169 @@
-import React from 'react';
-import Container from './../../components/Container/Container';
-import Footer from './../../components/Footer/Footer';
-import Header from './../../components/Header/Header';
+import React, { useState, useEffect } from 'react';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Container from '../../components/Container/Container';
 import './Compras.css';
-import InputField from './../../components/Input/InputField';
-const compras = [
-  {
-    "id": "2d2f96b5-b06e-4648-a73e-9bcc2013e669",
-    "nome": "Matheus Couto",
-    "status": true,
-    "dataDeEntrega": "",
-    "listaDeCompras": "",
-    "createdAt": "2021-07-29T02:30:50.375Z",
-    "updatedAt": "2021-07-29T02:30:50.375Z"
-  },
-
-  {
-    "id": "2a19187a-df83-4e85-ba49-4b4c9ea01988",
-    "nome": "Brito",
-    "status": true,
-    "dataDeEntrega": "",
-    "listaDeCompras": "",
-    "createdAt": "2021-07-29T02:32:15.985Z",
-    "updatedAt": "2021-07-29T02:32:15.985Z"
-  },
-
-  {
-    "id": "bef1207f-f1c9-4d38-97de-257e7fef4bc2",
-    "nome": "Camila",
-    "status": true,
-    "dataDeEntrega": "",
-    "listaDeCompras": "",
-    "createdAt": "2021-07-29T02:32:35.165Z",
-    "updatedAt": "2021-07-29T02:32:35.165Z"
-  },
-  
-]
-
+import InputField from '../../components/Input/InputField';
+import ListaItem from '../../components/ListaItem/ListaItem';
+import Item from '../../components/Item/Item';
+import api from './../../infra/axiosConfig';
 
 export default function Compras() {
+  const defaultList = [
+    {
+      id: '',
+      nome: '',
+      preco: 0,
+      porcentagemDeLucro: 0,
+      quantidadeEstoque: 0,
+      quantidadeVendidos: 0,
+      descricao: '',
+      image: '',
+    },
+  ];
+  const [lista, setLista] = useState(defaultList);
+  const [current, setCurrent] = useState(defaultList);
+
+  useEffect(() => {
+    getCompras();
+  }, []);
+  const getCompras = () => {
+    api
+      .get('/compras')
+      .then((response) => {
+        setLista(
+          response.data.data.map((el) => {
+            return { key: el.id, id: el.id, ...el };
+          })
+        );
+      })
+      .catch((err) => {
+        console.error('ops! ocorreu um erro' + err);
+      });
+  };
+  const updateForm = (event) => {
+    event.preventDefault();
+    const { id } = event.target;
+    setCurrent(lista.find((el) => el.id === id));
+  };
+  const clearForm = (event) => {
+    event.preventDefault();
+    setCurrent(defaultList);
+  };
+  const deleteCompras = (event) => {
+    event.preventDefault();
+    const confirm = window.confirm('Deseja realmente excluir esta Compra?');
+    if (!confirm) return;
+    const { id } = current;
+    api
+      .delete(`/compras/` + id)
+      .then((response) => {
+        getCompras();
+      })
+      .catch((err) => {
+        console.error('ops! ocorreu um erro' + err);
+      });
+    setCurrent(defaultList);
+    getCompras();
+  };
+
+  const postCompras = (data) => {
+    data.preventDefault();
+    api
+      .post('/compra', { data })
+      .then((response) => {
+        setLista(
+          response.data.data.map((el) => {
+            return { key: el.id, id: el.id, ...el };
+          })
+        );
+      })
+      .catch((err) => {
+        console.error('ops! ocorreu um erro' + err);
+      });
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event.value);
+  };
+
   return (
     <div className="comprasContainer">
       <Header />
       <Container>
-
-        <div className="comprasContent">
-          <div className="comprasContentTitle">
-            <h1>Compras</h1>
+        <div className="compraContent">
+          <div className="compraBox">
+            <div className="compraColumnLeft">
+              <div className="compraColumnLeftTitle">Lista de Compras</div>
+              <ListaItem>
+                {lista.map((item) => (
+                  <Item
+                    key={item.id}
+                    onClickDelete={deleteCompras}
+                    id={item.id}
+                    onClick={updateForm}
+                    texto={item.nome}
+                  ></Item>
+                ))}
+              </ListaItem>
             </div>
-            <ul className="comprasContentList">
-              <li>
-                <div className="comprasContentListItem">Batata</div>
-                </li>
-                <li>
-                  <div className="comprasContentListItem">Beterraba</div>
-                </li>
-                    <li>
-                      <div className="comprasContentListItem">Cenoura</div>
-                    </li>
-                    </ul>
-                    </div>
-                    <div className="comprasColumnRight">
-                      <div className="comprasFrom">
 
-
-                      Nome:
-                     <InputField placeholder={compras[0].nome} />
-                      Status:
-                      <InputField placeholder={compras[0].status}/>
-                      Preço: 
-                      <InputField placeholder={compras[0].preço}/>
-                      Data De Entrega: 
-                      <InputField placeholder={compras[0].dataDeEntrega}/>
-                      Lista De Compras:
-                      <InputField placeholder={compras[0].listaDeCompras}/> 
-                      Create Atualizado: 
-                      <InputField placeholder={compras[0].createAtualizado}/> 
-                      Updated Atualizado:
-                      <InputField placeholder={compras[0].updatedAtualizado}/>
-
-                      </div>
-                  
-
-                     
-                    </div>
+            <div className="compraColumnRight">
+              <form className="compraForm" onSubmit={handleSubmit}>
+                Nome:
+                <InputField
+                  style={{ marginTop: '0.1rem' }}
+                  name="nome"
+                  width="20rem"
+                  placeholder={current.nome}
+                />
+                Descrição:
+                <InputField
+                  width="20rem"
+                  name="descricao"
+                  placeholder={current.descricao}
+                />
+                Preço:
+                <InputField
+                  width="20rem"
+                  name="preco"
+                  placeholder={current.preco}
+                />
+                Quantidade em Estoque:
+                <InputField
+                  name="quantidadeEstoque"
+                  width="20rem"
+                  placeholder={current.quantidadeEstoque}
+                />
+                Quantidade vendidos:
+                <InputField
+                  name="quantidadeVendidos"
+                  width="20rem"
+                  placeholder={current.quantidadeVendidos}
+                />
+                Porcentagem de lucro:
+                <InputField
+                  name="porcentagemDeLucro"
+                  width="20rem"
+                  placeholder={current.quantidadeVendidos}
+                />
+                <div className="compraButton">
+                  <Item id="salvarCompra" type="submit" texto="Salvar" />
+                  <Item
+                    id="apagarForm"
+                    onClick={deleteCompras}
+                    texto="Deletar"
+                  />
+                  <Item id="" onClick={clearForm} texto="Limpar" />
+                </div>
+              </form>
+              <div className="compraImage">
+                <img className="compraImage" src={current.image} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
-
       <Footer />
     </div>
   );
