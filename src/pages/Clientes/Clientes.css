@@ -1,4 +1,36 @@
-.clientes{
-    width: 100%;
-    height: 750px;
+.clienteContent{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+.clienteColumnLeftTitle{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.clienteButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.3rem;
+}
+.clientetPath{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.clienteColumnLeft{
+    width: 15rem;
+}
+.clienteForm{
+    line-height: 1.5;
+}
+.clienteBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.clienteForm{
+    text-align: left;
+}
+.clienteContentTitle h1{
+    font-size: 4rem;
 }
