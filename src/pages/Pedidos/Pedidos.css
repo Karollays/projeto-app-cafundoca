@@ -1,4 +1,36 @@
-.pedidosContainer{
-    width: 100%;
-    height: 750px;
+.pedidoContent{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+.pedidoColumnLeftTitle{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.pedidoButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.3rem;
+}
+.pedidotPath{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.pedidoColumnLeft{
+    width: 15rem;
+}
+.pedidoForm{
+    line-height: 1.5;
+}
+.pedidoBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pedidoForm{
+    text-align: left;
+}
+.pedidoContentTitle h1{
+    font-size: 4rem;
 }
